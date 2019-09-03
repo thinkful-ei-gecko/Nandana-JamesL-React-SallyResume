@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <div id="application-root"></div>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel">
+  function App(){
+  return (
+    <main>
+        <header>
+          <div>
+            <h1>Sally Student</h1>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="My Resume Photo" height="150" width="100"></img>
+            <p><a href="mailto::tf.sally.student@gmail.com" target="_blank">tf.sally.student@gmail.com</a></p>
+            <p>555-555-5555</p>
+            <p>10 Thinkful Ave, New York, NY</p>
+          </div>
+        </header>
+
+        <section className="sally-education">
+          <h3>Education</h3>
+          <ul>
+          <li><h4>Roseville Area High School</h4>
+          <span>St. Paul, MN 2005-2009</span></li>
+
+          <li><h4>University Of Minnesota, B.A. Biology</h4>
+          <span>Minneapolis/St. Paul, MN 2009-2013</span></li>
+        </ul>
+        </section>
+
+        <section className="sally-employment">
+          <h3>Employment</h3>
+          <ul>
+            <li><h4>Delta Air Lines, <span>Specialty Sales Supervisor; 2015-2019</span></h4>
+              <p>Oversee Specialty Sales team for corporate contract travel.</p></li>  
+            <li><h4>Thinful Inc, <span>Software Developer; June 2019-present</span></h4>
+              <p>Learning how to code like a boss so I can get paid and enjoy what I do for the rest of my life.</p></li>
+        </ul>
+
+        </section>
+
+
+    </main>
+
+        
+          
+      
+          
+  );
+}
+
+
+  ReactDOM.render(
+    <App />, 
+    document.querySelector('#application-root')
+  )
+</script>
+</body>
+</html>
